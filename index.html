@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Omicons</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+ <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+
+        <span class="logo-icon">🧬</span>
+
+        <span class="logo-text">Omicons</span>
+
+    </div>
+
+    <ul class="nav-links">
+
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#">Categories</a></li>
+
+        <li><a href="#">Icons</a></li>
+
+        <li><a href="#">Pricing</a></li>
+
+        <li><a href="#">About</a></li>
+
+        <li><a href="#">Contact</a></li>
+
+    </ul>
+
+    <div class="nav-actions">
+
+        <button class="search-btn">🔍 Search</button>
+
+        <button class="login-btn">Login</button>
+
+    </div>
+
+</nav>
+
+
+<section class="hero">
+
+    <h1>Scientific Icons for Research</h1>
+
+    <p>
+        Find beautiful SVG icons for Biology, Medicine,
+        Proteomics, Metabolomics, Laboratory Science,
+        Bioinformatics and more.
+    </p>
+
+ 
+
+<div class="search-container">
+    <input type="text" id="search" placeholder="Search icon">
+
+<button onclick="searchIcon()">Search</button>
+
+<div id="result"></div>
+
+</section>
+
+<section class="categories">
+
+    <h2>Browse by Category</h2>
+
+    <div class="category-grid">
+
+        
+        <div class="card" onclick="filterCategory('Molecular Biology')">
+            <h3>🧬 Molecular Biology</h3>
+        </div>
+
+        <div class="card" onclick="filterCategory('Cells')">
+            <h3>🧿 Cells</h3>
+        </div>
+
+        <div class="card" onclick="filterCategory('Chemistry')">
+            <h3>🧪 Chemistry</h3>
+        </div>
+
+        <div class="card" onclick="filterCategory('Laboratory')">
+            <h3>🧫 Laboratory</h3>
+        </div>
+
+        <div class="card" onclick="filterCategory('Proteomics')">
+            <h3>🧬 Proteomics</h3>
+        </div>
+
+        <div class="card" onclick="filterCategory('Immunology')">
+            <h3>💊 Immunology</h3>
+        </div>
+
+    </div>
+
+
+
+<script src="assets/css/js/script.js"></script>
+
+<section id="contact">
+
+    <h2>Contact Us</h2>
+
+    <form>
+
+        <label>Name</label>
+        <input type="text" placeholder="Your name" required>
+
+
+        <label>Email</label>
+        <input type="email" placeholder="Your email" required>
+
+
+        <label>Message</label>
+        <textarea placeholder="Your message" rows="5" required></textarea>
+
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+
+
+
+    <div class="contact-info">
+
+        <p>📧 Email: prashanthbj23@gmail.com</p>
+
+        <p>🌐 Website: www.omicons.com</p>
+
+        <p>📍 Center for Omics and Systems Medicine (C-OSM), <p>
+
+           <p> Nitte (DU), Mangalore-575018 </p>
+
+    </div>
+
+
+
+</section>
+
+</body>
+
+</html>
+

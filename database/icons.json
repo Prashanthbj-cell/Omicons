@@ -1,0 +1,86 @@
+[
+    {
+        "name": "DNA phosphorylation",
+        "keyword": "DNA",
+        "category": "Molecular Biology",
+        "image": "assets/icons/DNA phosphorylation.svg"
+    },
+
+    {
+        "name": "DNA Double helix",
+        "keyword": "DNA",
+        "category": "Molecular Biology",
+        "image": "assets/icons/DNA Double helix.svg"
+    },
+
+    {
+        "name": "Antibody1",
+        "keyword": "Immune",
+        "category": "Immunology",
+        "image": "assets/icons/Antibody1.svg"
+    },
+
+    {
+        "name": "Apoptosis1",
+        "keyword": "Cells",
+        "category": "Immunology",
+        "image": "assets/icons/Apoptosis1.svg"
+    },
+  
+    {
+        "name": "mitochondria",
+        "keyword": "Cell",
+        "category": "Cells",
+        "image": "assets/icons/mitochondria.svg"
+    },
+
+        {
+        "name": "Patient group2",
+        "keyword": "DNA",
+        "category": "Molecular Biology",
+        "image": "assets/icons/Patient group2.svg"
+    },
+
+    {
+        "name": "Tablet1",
+        "keyword": "Drugs",
+        "category": "Immunology",
+        "image": "assets/icons/Tablet1.svg"
+    },
+
+    {
+        "name": "Tablet2",
+        "keyword": "Drugs",
+        "category": "Immunology",
+        "image": "assets/icons/Tablet2.svg"
+    },
+
+    {
+        "name": "Blood vessel1",
+        "keyword": "Blood",
+        "category": "Molecular Biology",
+        "image": "assets/icons/Blood vessel1.svg"
+    },
+
+    {
+        "name": "Control group1",
+        "keyword": "cohort",
+        "category": "Molecular Biology",
+        "image": "assets/icons/Control group1.svg"
+    },
+
+    {
+        "name": "Cell1",
+        "keyword": "cell",
+        "category": "Cells",
+        "image": "assets/icons/Cell1.svg"
+    },
+
+    {
+        "name": "Cell2",
+        "keyword": "cell",
+        "category": "Cells",
+        "image": "assets/icons/Cell2.svg"
+    }
+
+]
