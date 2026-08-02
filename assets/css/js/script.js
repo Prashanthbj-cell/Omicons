@@ -49,21 +49,23 @@ icon.category.toLowerCase().includes(input)
 ){
 
 
-            result.innerHTML += `
+          result.innerHTML += `
 
-            <div class="card">
+<div class="card">
 
-                <img src="${icon.image}" width="100">
+    <img src="${icon.image}"
+         class="icon-small"
+         onclick="openImage('${icon.image}','${icon.name}')">
 
-                <h3>${icon.name}</h3>
+    <h3>${icon.name}</h3>
 
-                <p>${icon.category}</p>
+    <p>${icon.category}</p>
 
-                <button onclick="downloadIcon('${icon.image}','${icon.name}')">
-                Download PNG
-                </button>
+    <button onclick="downloadIcon('${icon.image}','${icon.name}')">
+        Download PNG
+    </button>
 
-            </div>
+</div>
 
             `;
 
@@ -111,6 +113,20 @@ function downloadIcon(image, name) {
 
 }
 
+function openImage(image, name){
+
+    document.getElementById("imageModal").style.display = "block";
+    document.getElementById("modalImage").src = image;
+    document.getElementById("modalTitle").innerText = name;
+
+}
+
+function closeImage(){
+
+    document.getElementById("imageModal").style.display = "none";
+
+}
+
 function filterCategory(category) {
 
     let result = document.getElementById("result");
@@ -131,17 +147,19 @@ function filterCategory(category) {
 
             <div class="card">
 
-                <img src="${icon.image}" width="100">
+    <img src="${icon.image}"
+         class="icon-small"
+         onclick="openImage('${icon.image}','${icon.name}')">
 
-                <h3>${icon.name}</h3>
+    <h3>${icon.name}</h3>
 
-                <p>${icon.category}</p>
+    <p>${icon.category}</p>
 
-                <button onclick="downloadIcon('${icon.image}','${icon.name}')">
-                    Download PNG
-                </button>
+    <button onclick="downloadIcon('${icon.image}','${icon.name}')">
+        Download PNG
+    </button>
 
-            </div>
+</div>
 
             `;
 

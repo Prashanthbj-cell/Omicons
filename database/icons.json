@@ -332,6 +332,110 @@
         "keyword": "MS",
         "category": "Metabolomics",
         "image": "assets/icons/Metabolomics/Mass spec1.svg"
+    },
+    {
+        "name": "Eppendorf1",
+        "keyword": "Centrifuge tube",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Eppendorf1.svg"
+    },
+
+{
+        "name": "Eppendorf2",
+        "keyword": "Centrifuge tube",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Eppendorf2.svg"
+    },
+{
+        "name": "Eppendorf3",
+        "keyword": "Centrifuge tube",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Eppendorf3.svg"
+    },
+{
+        "name": "Eppendorf4",
+        "keyword": "Centrifuge tube",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Eppendorf4.svg"
+    },
+{
+        "name": "Eppendorf5",
+        "keyword": "Centrifuge tube",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Eppendorf5.svg"
+    },
+{
+        "name": "Eppendorf6",
+        "keyword": "Centrifuge tube",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Eppendorf6.svg"
+    },
+{
+        "name": "Eppendorf7",
+        "keyword": "Centrifuge tube",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Eppendorf7.svg"
+    },
+{
+        "name": "Eppendorf8",
+        "keyword": "Centrifuge tube",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Eppendorf8.svg"
+    },
+{
+        "name": "Eppendorf9",
+        "keyword": "Centrifuge tube",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Eppendorf9.svg"
+    },
+    {
+        "name": "Reagent bottle1",
+        "keyword": "Reagent bottle",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Reagent bottle1.svg"
+    },
+{
+        "name": "Reagent bottle2",
+        "keyword": "Reagent bottle",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Reagent bottle2.svg"
+    },
+
+{
+        "name": "Reagent bottle3",
+        "keyword": "Reagent bottle",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Reagent bottle3.svg"
+    },
+{
+        "name": "Reagent bottle4",
+        "keyword": "Reagent bottle",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Eppendorf4.svg"
+    },
+{
+        "name": "Reagent bottle5",
+        "keyword": "Reagent bottle",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Reagent bottle5.svg"
+    },
+{
+        "name": "Reagent bottle6",
+        "keyword": "Reagent bottle",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Reagent bottle6.svg"
+    },
+{
+        "name": "Reagent bottle7",
+        "keyword": "Reagent bottle",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Reagent bottle7.svg"
+    },
+{
+        "name": "Reagent bottle8",
+        "keyword": "Reagent bottle",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Reagent bottle8.svg"
     }
 ]
 

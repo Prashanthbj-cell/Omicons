@@ -46,7 +46,7 @@
 }
 
 .logo-text{
-    font-size: 5px;
+    font-size: 40px;
     font-weight: bold;
     color: #0A4F8F;
 }
@@ -107,34 +107,6 @@
         margin:auto;
 
         margin-top:20px;
-
-    }
-
-    /* Logo */
-
-    .logo{
-
-        display:flex;
-
-        align-items:center;
-
-        gap:10px;
-
-    }
-
-    .logo-icon{
-
-        font-size:50px;
-
-    }
-
-    .logo-text{
-
-        font-size:50px;
-
-        font-weight:bold;
-
-        color:#0F172A;
 
     }
 
@@ -510,15 +482,20 @@
     }
 
 
-    #result .card img {
+    #result .card img{
 
-        width: 150px;
+    width:140px;
+    height:140px;
+    object-fit:contain;
+    cursor:pointer;
+    transition:transform .25s;
+}
 
-        height: 150px;
+#result .card img:hover{
 
-        object-fit: contain;
+    transform:scale(1.08);
 
-    }
+}
 .login-container{
 
     width:350px;
@@ -644,4 +621,41 @@ html {
 
 .founder-sign h4{
     margin-bottom:5px;
+}
+
+.modal{
+    display:none;
+    position:fixed;
+    z-index:9999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.85);
+    text-align:center;
+}
+
+.modal img{
+    width:auto;
+    height:auto;
+
+    max-width:95vw;
+    max-height:90vh;
+
+    object-fit:contain;
+    margin-top:30px;
+}   
+
+.modal h2{
+    color:white;
+    margin-top:20px;
+}
+
+.close{
+    position:absolute;
+    top:20px;
+    right:35px;
+    color:white;
+    font-size:50px;
+    cursor:pointer;
 }
