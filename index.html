@@ -1,163 +1,268 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
+    <head>
 
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Omicons</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <title>Omicons</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
- <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-</head>
 
-<body>
 
-<nav>
+    </head>
 
-    <div class="logo">
+   
+    <body>
 
-        <span class="logo-icon">🧬</span>
+        <script>
+if (localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+</script>
 
-        <span class="logo-text">Omicons</span>
+    <nav>
+
+        <div class="logo">
+
+            <span class="logo-icon">🧬</span>
+
+            <span class="logo-text">Omicons</span>
+
+        </div>
+
+       <ul class="nav-links">
+
+    <li><a href="#home">Home</a></li>
+
+    <li><a href="#categories">Categories</a></li>
+
+    <li><a href="#icons">Icons</a></li>
+
+    <li><a href="#pricing">Pricing</a></li>
+
+    <li><a href="#about">About</a></li>
+
+    <li><a href="#contact">Contact</a></li>
+
+</ul>
+
+        <div class="nav-actions">
+
+            
+<a href="login.html" id="loginBtn">Login</a>
+
+<a href="register.html" id="registerBtn">Register</a>
+
+<button id="logoutBtn"
+        onclick="logout()"
+        style="display:none;">
+    Logout
+</button>
+
+
+        </div>
+
+    </nav>
+
+
+    <section id="home" class="hero">
+
+        <h1>Scientific Icons for Research</h1>
+
+        <p>
+            Find beautiful PNG icons for Biology, Medicine,
+            Proteomics, Metabolomics, Laboratory Science,
+            Bioinformatics and more.
+        </p>
+
+    
+
+  </section>
+
+<section id="icons">
+
+    <div class="search-container">
+
+        <input type="text" id="search" placeholder="Search icon">
+
+        <button onclick="searchIcon()">Search</button>
 
     </div>
 
-    <ul class="nav-links">
+    <div id="result"></div>
 
-        <li><a href="#">Home</a></li>
+</section>
 
-        <li><a href="#">Categories</a></li>
+   <section id="categories" class="categories">
 
-        <li><a href="#">Icons</a></li>
+        <h2>Browse by Category</h2>
 
-        <li><a href="#">Pricing</a></li>
+        <div class="category-grid">
 
-        <li><a href="#">About</a></li>
+            
+            <div class="card" onclick="filterCategory('Molecular Biology')">
+                <h3>🧬 Molecular Biology</h3>
+            </div>
 
-        <li><a href="#">Contact</a></li>
+            <div class="card" onclick="filterCategory('Cells')">
+                <h3>🧿 Cells</h3>
+            </div>
 
-    </ul>
+            <div class="card" onclick="filterCategory('Chemistry')">
+                <h3>🧪 Chemistry</h3>
+            </div>
 
-    <div class="nav-actions">
+            <div class="card" onclick="filterCategory('Laboratory')">
+                <h3>🧫 Laboratory</h3>
+            </div>
 
-        <button class="search-btn">🔍 Search</button>
+            <div class="card" onclick="filterCategory('Proteomics')">
+                <h3>🧬 Proteomics</h3>
+            </div>
 
-        <button class="login-btn">Login</button>
+            <div class="card" onclick="filterCategory('Metabolomics')">
+                <h3>⚛️ Metabolomics</h3>
+            </div>
 
+             <div class="card" onclick="filterCategory('Immunology')">
+                <h3>💊 Immunology</h3>
+            </div>
+
+             <div class="card" onclick="filterCategory('Biofluids')">
+                <h3>💧 Biofluids</h3>
+            </div>
+
+             <div class="card" onclick="filterCategory('General')">
+                <h3>🔬 General</h3>
+            </div>
+
+        </div>
+
+
+
+    <script src="assets/css/js/script.js"></script>
+
+
+
+   <section id="pricing" class="pricing">
+
+    <h2>Pricing</h2>
+
+    <div class="pricing-card">
+        <h3>Free Plan</h3>
+        <h1>$0</h1>
+        <p>Unlimited browsing of scientific icons.</p>
+        <button>Get Started</button>
     </div>
 
-</nav>
+</section>
 
 
-<section class="hero">
+   <<section id="about" class="about">
 
-    <h1>Scientific Icons for Research</h1>
+    <h2>About OMICONS</h2>
 
     <p>
-        Find beautiful SVG icons for Biology, Medicine,
-        Proteomics, Metabolomics, Laboratory Science,
-        Bioinformatics and more.
+        <strong>OMICONS</strong> is a dedicated scientific icon library developed to support
+        researchers, educators, students, healthcare professionals, and biotechnology
+        organizations with high-quality, publication-ready scientific icons.
     </p>
 
- 
+    <p>
+        Our collection covers Biology, Molecular Biology, Cell Biology, Genetics,
+        Proteomics, Metabolomics, Bioinformatics, Laboratory Science, Clinical
+        Diagnostics, and many other life science disciplines.
+    </p>
 
-<div class="search-container">
-    <input type="text" id="search" placeholder="Search icon">
+    <p>
+        Every icon is carefully designed with scientific accuracy, consistency, and
+        simplicity, making them suitable for research publications, conference
+        presentations, teaching materials, websites, and scientific communication.
+    </p>
 
-<button onclick="searchIcon()">Search</button>
+    <h3>About the Founder</h3>
 
-<div id="result"></div>
+    <p>
+        Hi, I'm <strong>Prashanth B J</strong>, the creator of OMICONS. I am a researcher
+        with a passion for proteomics, metabolomics, and computational biology.
+        During my academic and research journey, I realized that finding
+        professional scientific icons for presentations, publications, and teaching
+        materials was often difficult and time-consuming.
+    </p>
 
-</section>
+    <p>
+        OMICONS was created to solve this problem by providing a dedicated platform
+        where the scientific community can access accurate, modern, and visually
+        appealing icons designed specifically for life sciences.
+    </p>
 
-<section class="categories">
+    <p>
+        My vision is to make OMICONS the world's leading scientific icon library,
+        supporting students, researchers, educators, and professionals in
+        communicating science more effectively.
+    </p>
 
-    <h2>Browse by Category</h2>
-
-    <div class="category-grid">
-
-        
-        <div class="card" onclick="filterCategory('Molecular Biology')">
-            <h3>🧬 Molecular Biology</h3>
-        </div>
-
-        <div class="card" onclick="filterCategory('Cells')">
-            <h3>🧿 Cells</h3>
-        </div>
-
-        <div class="card" onclick="filterCategory('Chemistry')">
-            <h3>🧪 Chemistry</h3>
-        </div>
-
-        <div class="card" onclick="filterCategory('Laboratory')">
-            <h3>🧫 Laboratory</h3>
-        </div>
-
-        <div class="card" onclick="filterCategory('Proteomics')">
-            <h3>🧬 Proteomics</h3>
-        </div>
-
-        <div class="card" onclick="filterCategory('Immunology')">
-            <h3>💊 Immunology</h3>
-        </div>
-
-    </div>
-
-
-
-<script src="assets/css/js/script.js"></script>
-
-<section id="contact">
-
-    <h2>Contact Us</h2>
-
-    <form>
-
-        <label>Name</label>
-        <input type="text" placeholder="Your name" required>
-
-
-        <label>Email</label>
-        <input type="email" placeholder="Your email" required>
-
-
-        <label>Message</label>
-        <textarea placeholder="Your message" rows="5" required></textarea>
-
-
-        <button type="submit">
-            Send Message
-        </button>
-
-    </form>
-
-
-
-
-    <div class="contact-info">
-
-        <p>📧 Email: prashanthbj23@gmail.com</p>
-
-        <p>🌐 Website: www.omicons.com</p>
-
-        <p>📍 Center for Omics and Systems Medicine (C-OSM), <p>
-
-           <p> Nitte (DU), Mangalore-575018 </p>
-
-    </div>
-
-
+    <div class="founder-sign">
+    <h4>Prashanth B J</h4>
+    <p>Founder & Developer, OMICONS</p>
+</div>
 
 </section>
 
-</body>
+</section>
 
-</html>
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <form>
+
+            <label>Name</label>
+            <input type="text" placeholder="Your name" required>
+
+
+            <label>Email</label>
+            <input type="email" placeholder="Your email" required>
+
+
+            <label>Message</label>
+            <textarea placeholder="Your message" rows="5" required></textarea>
+
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+
+
+
+        <div class="contact-info">
+
+            <p>📧 Email: prashanthbj23@gmail.com</p>
+
+            <p>🌐 Website: www.omicons.com</p>
+
+            <p>📍 Center for Omics and Systems Medicine (C-OSM), <p>
+
+            <p> Nitte (DU), Mangalore-575018 </p>
+
+        </div>
+
+
+
+    </section>
+
+    </body>
+
+    </html>
 

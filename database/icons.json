@@ -3,84 +3,335 @@
         "name": "DNA phosphorylation",
         "keyword": "DNA",
         "category": "Molecular Biology",
-        "image": "assets/icons/DNA phosphorylation.svg"
+        "image": "assets/icons/Molecular Biology/DNA phosphorylation.svg"
     },
 
     {
         "name": "DNA Double helix",
         "keyword": "DNA",
         "category": "Molecular Biology",
-        "image": "assets/icons/DNA Double helix.svg"
+        "image": "assets/icons/Molecular Biology/DNA Double helix.svg"
     },
 
     {
         "name": "Antibody1",
         "keyword": "Immune",
         "category": "Immunology",
-        "image": "assets/icons/Antibody1.svg"
+        "image": "assets/icons/Immunology/Antibody1.svg"
     },
 
     {
         "name": "Apoptosis1",
         "keyword": "Cells",
         "category": "Immunology",
-        "image": "assets/icons/Apoptosis1.svg"
+        "image": "assets/icons/Immunology/Apoptosis1.svg"
     },
   
     {
         "name": "mitochondria",
         "keyword": "Cell",
         "category": "Cells",
-        "image": "assets/icons/mitochondria.svg"
+        "image": "assets/icons/Cells/mitochondria.svg"
     },
 
         {
         "name": "Patient group2",
-        "keyword": "DNA",
+        "keyword": "cohort",
         "category": "Molecular Biology",
-        "image": "assets/icons/Patient group2.svg"
+        "image": "assets/icons/Molecular Biology/Patient group2.svg"
     },
 
     {
         "name": "Tablet1",
         "keyword": "Drugs",
         "category": "Immunology",
-        "image": "assets/icons/Tablet1.svg"
+        "image": "assets/icons/Immunology/Tablet1.svg"
     },
 
     {
         "name": "Tablet2",
         "keyword": "Drugs",
         "category": "Immunology",
-        "image": "assets/icons/Tablet2.svg"
+        "image": "assets/icons/Immunology/Tablet2.svg"
     },
 
     {
         "name": "Blood vessel1",
         "keyword": "Blood",
         "category": "Molecular Biology",
-        "image": "assets/icons/Blood vessel1.svg"
+        "image": "assets/icons/Molecular Biology/Blood vessel1.svg"
     },
 
     {
         "name": "Control group1",
         "keyword": "cohort",
         "category": "Molecular Biology",
-        "image": "assets/icons/Control group1.svg"
+        "image": "assets/icons/Molecular Biology/Control group1.svg"
     },
 
     {
         "name": "Cell1",
         "keyword": "cell",
         "category": "Cells",
-        "image": "assets/icons/Cell1.svg"
+        "image": "assets/icons/Cells/Cell1.svg"
     },
 
     {
         "name": "Cell2",
         "keyword": "cell",
         "category": "Cells",
-        "image": "assets/icons/Cell2.svg"
-    }
+        "image": "assets/icons/Cells/Cell2.svg"
+    },
 
+    
+    {
+        "name": "Report1",
+        "keyword": "Report",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Report1.svg"
+    },
+
+    
+    {
+        "name": "Antibody2",
+        "keyword": "Immune",
+        "category": "Immunology",
+        "image": "assets/icons/Immunology/Antibody2.svg"
+    },
+
+    {
+        "name": "Cell3",
+        "keyword": "Cell",
+        "category": "Cells",
+        "image": "assets/icons/Cells/Cell3.svg"
+    },
+
+    {
+        "name": "Cell4",
+        "keyword": "Cell",
+        "category": "Cells",
+        "image": "assets/icons/Cells/Cell4.svg"
+    },
+
+     {
+        "name": "Monitor1",
+        "keyword": "TV",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Monitor1.svg"
+    },
+
+    {
+        "name": "Report2",
+        "keyword": "Report",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Report2.svg"
+    },
+
+      {
+        "name": "Spectra1",
+        "keyword": "Report",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Spectra1.svg"
+    },
+
+     {
+        "name": "Ribosome1",
+        "keyword": "Ribosome",
+        "category": "Immunology",
+        "image": "assets/icons/Immunology/Ribosome1.svg"
+    },
+
+     {
+        "name": "Proteasome1",
+        "keyword": "Proteasome",
+        "category": "Immunology",
+        "image": "assets/icons/Immunology/Proteasome1.svg"
+    },
+
+     {
+        "name": "Monitor2",
+        "keyword": "Display",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Monitor2.svg"
+    },
+
+    {
+        "name": "Burger1",
+        "keyword": "Food",
+        "category": "General",
+        "image": "assets/icons/General/Burger1.svg"
+    },
+
+    {
+        "name": "Report3",
+        "keyword": "report",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Report3.svg"
+    },
+
+    {
+        "name": "Vacutainer1",
+        "keyword": "blood",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Vacutainer1.svg"
+    },
+
+      {
+        "name": "Tumor1",
+        "keyword": "Cell",
+        "category": "Cells",
+        "image": "assets/icons/Cells/Tumor1.svg"
+    },
+     {
+        "name": "Tumor2",
+        "keyword": "Cell",
+        "category": "Cells",
+        "image": "assets/icons/Cells/Tumor2.svg"
+    },
+     {
+        "name": "Virus1",
+        "keyword": "Cell",
+        "category": "Cells",
+        "image": "assets/icons/Cells/Virus1.svg"
+    },
+    {
+        "name": "DNA1",
+        "keyword": "DNA",
+        "category": "Molecular Biology",
+        "image": "assets/icons/Molecular Biology/DNA1.svg"
+    },
+    {
+        "name": "Analysis1",
+        "keyword": "Data",
+        "category": "Proteomics",
+        "image": "assets/icons/Proteomics/Analysis1.svg"
+    },
+    {
+        "name": "Analysis2",
+        "keyword": "Data",
+        "category": "Proteomics",
+        "image": "assets/icons/Proteomics/Analysis2.svg"
+    },
+    {
+        "name": "Balance1",
+        "keyword": "weight",
+        "category": "General",
+        "image": "assets/icons/General/Balance1.svg"
+    },
+    {
+        "name": "Glass1",
+        "keyword": "food",
+        "category": "General",
+        "image": "assets/icons/General/Glass1.svg"
+    },
+        {
+        "name": "Leaf1",
+        "keyword": "leaf",
+        "category": "General",
+        "image": "assets/icons/General/Leaf1.svg"
+    },
+
+        {
+        "name": "Petriplate1",
+        "keyword": "plate",
+        "category": "Chemistry",
+        "image": "assets/icons/Chemistry/Petriplate1.svg"
+    },
+        {
+        "name": "Petriplate2",
+        "keyword": "plate",
+        "category": "Chemistry",
+        "image": "assets/icons/Chemistry/Petriplate2.svg"
+    },
+        {
+        "name": "Petriplate3",
+        "keyword": "plate",
+        "category": "Chemistry",
+        "image": "assets/icons/Chemistry/Petriplate3.svg"
+    },
+    {
+        "name": "Antibody3",
+        "keyword": "Immune",
+        "category": "Immunology",
+        "image": "assets/icons/Immunology/Antibody3.svg"
+    },
+    {
+        "name": "Graph1",
+        "keyword": "Data",
+        "category": "Proteomics",
+        "image": "assets/icons/Proteomics/Graph1.svg"
+    },
+    {
+        "name": "Graph2",
+        "keyword": "Data",
+        "category": "Proteomics",
+        "image": "assets/icons/Proteomics/Graph2.svg"
+    },
+     {
+        "name": "Report34",
+        "keyword": "report",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Report4.svg"
+    },
+    {
+        "name": "Antibody4",
+        "keyword": "Immune",
+        "category": "Immunology",
+        "image": "assets/icons/Immunology/Antibody4.svg"
+    },
+    {
+        "name": "Antibody5",
+        "keyword": "Immune",
+        "category": "Immunology",
+        "image": "assets/icons/Immunology/Antibody5.svg"
+    },
+    {
+        "name": "Antigen1",
+        "keyword": "Immune",
+        "category": "Immunology",
+        "image": "assets/icons/Immunology/Antigen1.svg"
+    },
+       {
+        "name": "Gear1",
+        "keyword": "gear",
+        "category": "General",
+        "image": "assets/icons/General/Gear1.svg"
+    },
+       {
+        "name": "Magnifier1",
+        "keyword": "magnifier",
+        "category": "General",
+        "image": "assets/icons/General/Magnifier1.svg"
+    },
+     {
+        "name": "Pippete1",
+        "keyword": "pippete",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Pippete1.svg"
+    },
+     {
+        "name": "Rubics cube1",
+        "keyword": "cube",
+        "category": "General",
+        "image": "assets/icons/General/Rubics cube1.svg"
+    },
+     {
+        "name": "Magnifier2",
+        "keyword": "magnifier",
+        "category": "General",
+        "image": "assets/icons/General/Magnifier2.svg"
+    },
+    {
+        "name": "Monitor3",
+        "keyword": "TV",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Monitor3.svg"
+    },
+    {
+        "name": "Mass spec1",
+        "keyword": "MS",
+        "category": "Metabolomics",
+        "image": "assets/icons/Metabolomics/Mass spec1.svg"
+    }
 ]
+
