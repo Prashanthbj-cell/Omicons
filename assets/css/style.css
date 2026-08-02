@@ -607,3 +607,34 @@ html {
     color: #555;
 
 }
+
+.founder-container{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.founder-image img{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #0d6efd;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.founder-content{
+    flex:1;
+    min-width:300px;
+}
+
+.founder-sign{
+    margin-top:25px;
+    font-weight:bold;
+}
+
+.founder-sign h4{
+    margin-bottom:5px;
+}
