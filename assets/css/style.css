@@ -34,15 +34,22 @@
     /* Logo */
 
     .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-        font-size:300px;
+.logo-image{
+    width: 150px;   /* Adjust size as needed */
+    height: 150px;
+    object-fit: contain;
+}
 
-        font-weight:bold;
-
-        color:#0F172A;
-
-    }
-
+.logo-text{
+    font-size: 5px;
+    font-weight: bold;
+    color: #0A4F8F;
+}
     /* Menu */
 
     nav ul{
