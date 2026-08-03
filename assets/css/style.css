@@ -456,30 +456,34 @@
 
     }
 
-    #result {
+#result {
 
-        display: grid;
+    display: grid;
 
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, 200px);
 
-        gap: 20px;
+    gap: 30px;
 
-        margin-top: 30px;
+    justify-content: start;
 
-    }
-    #result .card {
+    margin-top: 30px;
 
-        border:3px solid #ddd;
+}
+  #result .card {
 
-        padding: 5px;
+    width:200px;
 
-        text-align: center;
+    border:1px solid #ddd;
 
-        border-radius: 15px;
+    padding:20px;
 
-        background: white;
+    text-align:center;
 
-    }
+    border-radius:15px;
+
+    background:white;
+
+}
 
 
     #result .card img{
@@ -625,7 +629,7 @@ html {
 
 .modal{
     display:none;
-    position:fixed;
+    position:absolute;
     z-index:9999;
     left:0;
     top:0;
@@ -658,4 +662,54 @@ html {
     color:white;
     font-size:50px;
     cursor:pointer;
+}
+
+
+.button-row{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+
+
+.heart-btn{
+    font-size:22px;
+    cursor:pointer;
+    background:none;
+    border:none;
+    padding:0;
+}
+
+
+.heart-btn:hover{
+    transform:scale(1.2);
+}
+.download-btn {
+    background: white !important;
+    color: #333 !important;
+    border: 1px solid #ddd !important;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.download-btn:hover {
+    background: #f1f1f1 !important;
+}
+
+
+.card-buttons{
+    display:grid;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+
+#favoriteContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    width: 100%;
 }

@@ -1,9 +1,3 @@
-if (
-    window.location.pathname.includes("index.html") &&
-    localStorage.getItem("loggedIn") !== "true"
-) {
-    window.location.href = "login.html";
-}
 
 let icons = [];
 
@@ -53,17 +47,24 @@ icon.category.toLowerCase().includes(input)
 
 <div class="card">
 
-    <img src="${icon.image}"
-         class="icon-small"
-         onclick="openImage('${icon.image}','${icon.name}')">
+<img src="${icon.image}" 
+onclick="openImage('${icon.image}','${icon.name}')">
 
-    <h3>${icon.name}</h3>
+<h3>${icon.name}</h3>
 
-    <p>${icon.category}</p>
+<div class="button-row">
 
-    <button onclick="downloadIcon('${icon.image}','${icon.name}')">
-        Download PNG
-    </button>
+<button class="download-btn" onclick="downloadIcon('${icon.image}','${icon.name}')">
+Download PNG
+</button>
+
+
+<span class="heart-btn"
+onclick="addFavorite('${icon.name}','${icon.image}','icons.html')">
+❤️
+</span>
+
+</div>
 
 </div>
 
@@ -155,9 +156,19 @@ function filterCategory(category) {
 
     <p>${icon.category}</p>
 
-    <button onclick="downloadIcon('${icon.image}','${icon.name}')">
-        Download PNG
-    </button>
+    <div class="button-row">
+
+<button class="download-btn" onclick="downloadIcon('${icon.image}','${icon.name}')">
+    Download PNG
+</button>
+
+
+<span class="heart-btn"
+onclick="addFavorite('${icon.name}','${icon.image}','icons.html')">
+❤️
+</span>
+
+</div>
 
 </div>
 
@@ -177,92 +188,43 @@ function filterCategory(category) {
 
 }
 
-function login(event) {
 
-    event.preventDefault();
 
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+function addFavorite(name,image,link){
 
-    const user = JSON.parse(localStorage.getItem("omiconsUser"));
 
-    if (!user) {
-        alert("Please register first.");
-        return;
-    }
+let favorites =
+JSON.parse(localStorage.getItem("favorites")) || [];
 
-    if (email === user.email && password === user.password) {
 
-        localStorage.setItem("loggedIn", "true");
+let exists =
+favorites.some(icon=>icon.name===name);
 
-        alert("Login Successful");
 
-        window.location.href = "index.html";   // Main website
+if(!exists){
 
-    } else {
+favorites.push({
+name:name,
+image:image,
+link:link
+});
 
-        alert("Invalid Email or Password");
 
-    }
-}
+localStorage.setItem(
+"favorites",
+JSON.stringify(favorites)
+);
 
-function register(event){
 
-    event.preventDefault();
-
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("regEmail").value;
-    const password = document.getElementById("regPassword").value;
-    const confirm = document.getElementById("confirmPassword").value;
-
-    if(password !== confirm){
-        alert("Passwords do not match");
-        return;
-    }
-
-    localStorage.setItem("omiconsUser", JSON.stringify({
-        name: name,
-        email: email,
-        password: password
-    }));
-
-    alert("Registration Successful");
-
-    window.location.href = "login.html";   // Go to login page
-}
-
-function logout() {
-
-    localStorage.removeItem("loggedIn");
-
-    alert("Logged out successfully.");
-
-    window.location.href = "login.html";
+alert("Added to Favorites ❤️");
 
 }
 
-window.onload = function () {
+else{
 
-    const loginBtn = document.getElementById("loginBtn");
-    const registerBtn = document.getElementById("registerBtn");
-    const logoutBtn = document.getElementById("logoutBtn");
+alert("Already in Favorites");
 
-    // If this page doesn't have these buttons, do nothing
-    if (!loginBtn || !registerBtn || !logoutBtn) {
-        return;
-    }
+}
 
-    if (localStorage.getItem("loggedIn") === "true") {
 
-        loginBtn.style.display = "none";
-        registerBtn.style.display = "none";
-        logoutBtn.style.display = "inline-block";
-
-    } else {
-
-        loginBtn.style.display = "inline-block";
-        registerBtn.style.display = "inline-block";
-        logoutBtn.style.display = "none";
-
-    }
-};
+}
