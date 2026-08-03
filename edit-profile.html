@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edit Profile</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+
+<body>
+    <script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+
+import {
+    getAuth,
+    onAuthStateChanged,
+    updateProfile
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCRD684PyMukUI1GS7loAFRCZ5mmDBJmDE",
+  authDomain: "omicons.firebaseapp.com",
+  projectId: "omicons",
+  storageBucket: "omicons.firebasestorage.app",
+  messagingSenderId: "720025359555",
+  appId: "1:720025359555:web:b9fdcd4c30e9bcffddbe76"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+onAuthStateChanged(auth, (user) => {
+
+    if (!user) {
+        window.location.href = "login.html";
+        return;
+    }
+
+    document.getElementById("newName").value =
+        user.displayName || "";
+
+});
+
+window.saveProfile = async function () {
+
+    const user = auth.currentUser;
+
+    if (!user) {
+        alert("No user is logged in.");
+        return;
+    }
+
+    const newName = document.getElementById("newName").value.trim();
+
+    if (newName === "") {
+        alert("Please enter your name.");
+        return;
+    }
+
+    try {
+
+        await updateProfile(user, {
+            displayName: newName
+        });
+
+        await user.reload();
+
+        alert("Profile updated successfully!");
+
+        window.location.href = "profile.html";
+
+    } catch (error) {
+
+        console.error(error);
+
+        alert(error.message);
+
+    }
+
+};
+
+</script>
+
+<div class="profile-container">
+
+<div class="profile-card">
+
+<h2>Edit Profile</h2>
+
+<input
+type="text"
+id="newName"
+placeholder="Enter your name">
+
+<br><br>
+
+<button onclick="saveProfile()">
+    
+Save Changes
+
+</button>
+
+<br><br>
+
+<a href="profile.html">
+Back to Profile
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
