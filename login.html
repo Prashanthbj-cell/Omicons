@@ -14,28 +14,18 @@
     <h1>OMICONS</h1>
     <h2>Login</h2>
 
-    <form onsubmit="login(event)">
+ <input type="email" id="email" placeholder="Email">
 
-        <input
-            type="email"
-            id="email"
-            placeholder="Email Address"
-            required
-        >
+<input type="password" id="password" placeholder="Password">
 
-        <input
-            type="password"
-            id="password"
-            placeholder="Password"
-            required
-        >
+<button onclick="login()">Login</button>
 
-        <button type="submit">
-            Login
-        </button>
+<br><br>
 
-    </form>
-
+<p>
+    <a href="#" onclick="resetPassword()">Forgot Password?</a>
+</p>
+<br><br>
     <p>
         Don't have an account?
         <a href="register.html">Register</a>
@@ -44,6 +34,79 @@
 </div>
 
 <script src="assets/css/js/script.js"></script>
+
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+import {
+    getAuth,
+    signInWithEmailAndPassword,
+    sendPasswordResetEmail
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCRD684PyMukUI1GS7loAFRCZ5mmDBJmDE",
+  authDomain: "omicons.firebaseapp.com",
+  projectId: "omicons",
+  storageBucket: "omicons.firebasestorage.app",
+  messagingSenderId: "720025359555",
+  appId: "1:720025359555:web:b9fdcd4c30e9bcffddbe76"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+window.login = async function () {
+
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    try {
+
+        await signInWithEmailAndPassword(auth, email, password);
+        localStorage.setItem("loggedIn", "true");
+
+        alert("Login Successful!");
+
+        window.location.href = "index.html";
+
+    } catch (error) {
+
+        alert(error.message);
+
+    }
+
+}
+
+
+window.resetPassword = async function () {
+
+    const email = document.getElementById("email").value;
+
+    if(email === ""){
+
+        alert("Please enter your email address first.");
+
+        return;
+
+    }
+
+    try{
+
+        await sendPasswordResetEmail(auth, email);
+
+        alert("Password reset email has been sent. Please check your inbox.");
+
+    }catch(error){
+
+        alert(error.message);
+
+    }
+
+}
+
+
+</script>
 
 </body>
 </html>

@@ -36,5 +36,76 @@
 
 <script src="assets/css/js/script.js"></script>
 
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+
+import {
+    getAuth,
+    createUserWithEmailAndPassword
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+
+const firebaseConfig = {
+
+  apiKey: "AIzaSyCRD684PyMukUI1GS7loAFRCZ5mmDBJmDE",
+
+  authDomain: "omicons.firebaseapp.com",
+
+  projectId: "omicons",
+
+  storageBucket: "omicons.firebasestorage.app",
+
+  messagingSenderId: "720025359555",
+
+  appId: "1:720025359555:web:b9fdcd4c30e9bcffddbe76"
+
+};
+
+const app = initializeApp(firebaseConfig);
+
+const auth = getAuth(app);
+
+window.register = async function(event){
+
+    event.preventDefault();
+
+    const email = document.getElementById("regEmail").value;
+
+    const password = document.getElementById("regPassword").value;
+
+    const confirm = document.getElementById("confirmPassword").value;
+
+    if(password !== confirm){
+
+        alert("Passwords do not match.");
+
+        return;
+
+    }
+
+    try{
+
+        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+
+await updateProfile(userCredential.user, {
+    displayName: document.getElementById("name").value
+});
+
+        alert("Registration Successful!");
+
+        window.location.href="login.html";
+
+    }
+
+    catch(error){
+
+        alert(error.message);
+
+    }
+
+}
+
+</script>
+
 </body>
 </html>
