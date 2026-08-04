@@ -484,6 +484,103 @@
         "keyword": "Glass rod",
         "category": "Laboratory",
         "image": "assets/icons/Laboratory/Glass rod1.svg"
+    },
+    {
+        "name": "Bulb1",
+        "keyword": "Electric bulb",
+        "category": "General",
+        "image": "assets/icons/General/Bulb1.svg"
+    },
+{
+        "name": "Bulb2",
+        "keyword": "Electric bulb",
+        "category": "General",
+        "image": "assets/icons/General/Bulb2.svg"
+    },
+{
+        "name": "Bulb3",
+        "keyword": "Electric bulb",
+        "category": "General",
+        "image": "assets/icons/General/Bulb3.svg"
+    },
+{
+        "name": "Bulb4",
+        "keyword": "Electric bulb",
+        "category": "General",
+        "image": "assets/icons/General/Bulb4.svg"
+    },
+{
+        "name": "Bulb5",
+        "keyword": "Electric bulb",
+        "category": "General",
+        "image": "assets/icons/General/Bulb5.svg"
+    },
+{
+        "name": "Bulb6",
+        "keyword": "Electric bulb",
+        "category": "General",
+        "image": "assets/icons/General/Bulb6.svg"
+    },
+{
+        "name": "Bulb7",
+        "keyword": "Electric bulb",
+        "category": "General",
+        "image": "assets/icons/General/Bulb7.svg"
+    },
+{
+        "name": "Bulb8",
+        "keyword": "Electric bulb",
+        "category": "General",
+        "image": "assets/icons/General/Bulb8.svg"
+    },
+{
+        "name": "Bulb9",
+        "keyword": "Electric bulb",
+        "category": "General",
+        "image": "assets/icons/General/Bulb9.svg"
+    },
+{
+        "name": "Bulb10",
+        "keyword": "Electric bulb",
+        "category": "General",
+        "image": "assets/icons/General/Bulb10.svg"
+    },
+    {
+        "name": "Beaker1000mL1",
+        "keyword": "Beaker",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Beaker1000mL1.svg"
+    },
+{
+        "name": "Beaker1000mL2",
+        "keyword": "Beaker",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Beaker1000mL2.svg"
+    },
+{
+        "name": "Beaker1000mL3",
+        "keyword": "Beaker",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Beaker1000mL3.svg"
+    },
+{
+        "name": "Beaker1000mL4",
+        "keyword": "Beaker",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Beaker1000mL4.svg"
+    },
+{
+        "name": "Beaker1000mL5",
+        "keyword": "Beaker",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Beaker1000mL5.svg"
+    },
+{
+        "name": "Beaker1000mL6",
+        "keyword": "Beaker",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Beaker1000mL6.svg"
     }
+
 ]
 
