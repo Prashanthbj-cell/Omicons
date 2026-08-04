@@ -70,7 +70,9 @@ window.login = async function () {
 
         window.location.href = "index.html";
 
-   catch(error){
+   catch (error) {
+
+    console.log(error.code);
 
     if (error.code === "auth/invalid-credential") {
 
@@ -86,11 +88,9 @@ window.login = async function () {
 
     } else {
 
-        alert(error.message);
+        alert("Login failed.");
 
     }
-
-}
 
 }
 
