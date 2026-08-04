@@ -64,65 +64,59 @@ window.login = async function () {
     try {
 
         await signInWithEmailAndPassword(auth, email, password);
+
         localStorage.setItem("loggedIn", "true");
 
         alert("Login Successful!");
 
         window.location.href = "index.html";
 
-    }
+    } catch (error) {
 
-   catch (error) {
+        if (error.code === "auth/invalid-credential") {
 
-    console.log(error.code);
+            alert("Wrong email or password.");
 
-    if (error.code === "auth/invalid-credential") {
+        } else if (error.code === "auth/invalid-email") {
 
-        alert("Wrong email or password.");
+            alert("Please enter a valid email address.");
 
-    } else if (error.code === "auth/invalid-email") {
+        } else if (error.code === "auth/too-many-requests") {
 
-        alert("Please enter a valid email address.");
+            alert("Too many failed attempts. Please try again later.");
 
-    } else if (error.code === "auth/too-many-requests") {
+        } else {
 
-        alert("Too many failed attempts. Please try again later.");
+            alert("Login failed.");
 
-    } else {
-
-        alert("Login failed.");
+        }
 
     }
 
-}
-
+};
 
 window.resetPassword = async function () {
 
     const email = document.getElementById("email").value;
 
-    if(email === ""){
-
+    if (email === "") {
         alert("Please enter your email address first.");
-
         return;
-
     }
 
-    try{
+    try {
 
         await sendPasswordResetEmail(auth, email);
 
         alert("Password reset email has been sent. Please check your inbox.");
 
-    }catch(error){
+    } catch (error) {
 
         alert(error.message);
 
     }
 
-}
-
+};
 
 </script>
 
