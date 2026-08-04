@@ -116,7 +116,10 @@ function downloadIcon(image, name) {
 
 function openImage(image, name){
 
-    document.getElementById("imageModal").style.display = "block";
+    const modal = document.getElementById("imageModal");
+
+    modal.style.display = "flex";
+
     document.getElementById("modalImage").src = image;
     document.getElementById("modalTitle").innerText = name;
 
