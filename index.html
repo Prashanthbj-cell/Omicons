@@ -137,9 +137,11 @@ Logout
 
     <div class="search-container">
 
-        <input type="text" id="search" placeholder="Search icon">
-
-        <button onclick="searchIcon()">Search</button>
+        <input
+    type="text"
+    id="search"
+    placeholder="Search scientific icons..."
+    onkeydown="if(event.key==='Enter'){event.preventDefault(); searchIcon();}">
 
     </div>
 
