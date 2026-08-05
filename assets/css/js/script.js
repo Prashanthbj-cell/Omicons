@@ -113,8 +113,8 @@ ctx.font = "60px Arial";
 ctx.fillStyle = "rgba(0, 0, 0, 0.15)";
 ctx.textAlign = "center";
 
-for (let x = -canvas.width; x < canvas.width * 2; x += 500) {
-    for (let y = -canvas.height; y < canvas.height * 2; y += 200) {
+for (let x = -canvas.width; x < canvas.width * 2; x += 350) {
+    for (let y = -canvas.height; y < canvas.height * 2; y += 150) {
         ctx.fillText("OMICONS", x, y);
     }
 }
