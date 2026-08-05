@@ -110,8 +110,8 @@ function downloadIcon(image, name) {
         ctx.translate(canvas.width / 2, canvas.height / 2);
         ctx.rotate(-Math.PI / 4);
 
-        ctx.font = "80px Arial";
-        ctx.fillStyle = "rgba(0, 0, 0, 0.15)";
+        ctx.font = "100px Arial";
+        ctx.fillStyle = "rgba(0, 0, 0, 0.3)";
         ctx.textAlign = "center";
 
         ctx.fillText("WWW.OMICONS.IN", 0, 0);
