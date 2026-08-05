@@ -110,7 +110,7 @@ function downloadIcon(image, name) {
         ctx.translate(canvas.width / 2, canvas.height / 2);
         ctx.rotate(-Math.PI / 4);
 
-        ctx.font = "30px Arial";
+        ctx.font = "80px Arial";
         ctx.fillStyle = "rgba(0, 0, 0, 0.15)";
         ctx.textAlign = "center";
 
