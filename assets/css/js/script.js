@@ -184,10 +184,14 @@ onclick="addFavorite('${icon.name}','${icon.image}','icons.html')">
 
     if (!found) {
 
-        result.innerHTML = "<h3>No icons found in this category</h3>";
+    result.innerHTML = "<h3>No icons found in this category</h3>";
 
-    }
+}
 
+// Scroll back to the Icons section
+document.getElementById("icons").scrollIntoView({
+    behavior: "smooth"
+});
 
 }
 
