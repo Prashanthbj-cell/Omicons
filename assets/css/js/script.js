@@ -22,18 +22,16 @@ fetch("database/icons.json")
 
 function searchIcon() {
 
-    let searchBox = document.getElementById("search");
+    const searchBox = document.getElementById("search");
+    const result = document.getElementById("result");
 
-    let input = searchBox.value.trim().toLowerCase();
-
-    let result = document.getElementById("result");
+    const input = searchBox.value.trim().toLowerCase();
 
     result.innerHTML = "";
 
     // Empty search
     if (input === "") {
 
-        searchBox.value = "";
         searchBox.placeholder = "Please enter an icon name to search";
         searchBox.focus();
 
@@ -57,19 +55,19 @@ function searchIcon() {
 <div class="card">
 
     <img src="${icon.image}"
-    onclick="openImage('${icon.image}','${icon.name}')">
+         onclick="openImage('${icon.image}','${icon.name}')">
 
     <h3>${icon.name}</h3>
 
     <div class="button-row">
 
         <button class="download-btn"
-        onclick="downloadIcon('${icon.image}','${icon.name}')">
+                onclick="downloadIcon('${icon.image}','${icon.name}')">
             Download PNG
         </button>
 
         <span class="heart-btn"
-        onclick="addFavorite('${icon.name}','${icon.image}','icons.html')">
+              onclick="addFavorite('${icon.name}','${icon.image}','icons.html')">
             ❤️
         </span>
 
@@ -83,7 +81,6 @@ function searchIcon() {
 
     });
 
-    // No matching icons
     if (result.innerHTML === "") {
 
         result.innerHTML = "<h3>No icons found.</h3>";
