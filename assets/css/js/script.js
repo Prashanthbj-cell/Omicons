@@ -20,12 +20,14 @@ fetch("database/icons.json")
 });
 
 
-function searchIcon(){
+if (input.trim() === "") {
 
-    let input = document
-    .getElementById("search")
-    .value
-    .toLowerCase();
+    document.getElementById("result").innerHTML =
+        "<h3>Please enter an icon name to search.</h3>";
+
+    return;
+
+}
 
 
     let result = document.getElementById("result");
