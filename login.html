@@ -14,9 +14,17 @@
     <h1>OMICONS</h1>
     <h2>Login</h2>
 
- <input type="email" id="email" placeholder="Email">
+ <input
+    type="email"
+    id="email"
+    placeholder="Email"
+    onkeydown="if(event.key==='Enter'){login();}">
 
-<input type="password" id="password" placeholder="Password">
+<input
+    type="password"
+    id="password"
+    placeholder="Password"
+    onkeydown="if(event.key==='Enter'){login();}">
 
 <button onclick="login()">Login</button>
 
