@@ -102,21 +102,32 @@ function downloadIcon(image, name) {
 
         let ctx = canvas.getContext("2d");
 
+        // Draw the icon
         ctx.drawImage(img, 0, 0);
 
-        let pngFile = canvas.toDataURL("image/png");
+        // ===== WATERMARK =====
+        ctx.save();
+        ctx.translate(canvas.width / 2, canvas.height / 2);
+        ctx.rotate(-Math.PI / 4);
 
+        ctx.font = "30px Arial";
+        ctx.fillStyle = "rgba(0, 0, 0, 0.15)";
+        ctx.textAlign = "center";
+
+        ctx.fillText("WWW.OMICONS.IN", 0, 0);
+
+        ctx.restore();
+        // =====================
+
+        let pngFile = canvas.toDataURL("image/png");
 
         let link = document.createElement("a");
 
         link.href = pngFile;
-
         link.download = name + ".png";
 
         document.body.appendChild(link);
-
         link.click();
-
         document.body.removeChild(link);
 
     };
