@@ -20,73 +20,75 @@ fetch("database/icons.json")
 });
 
 
-function searchIcon(){
+function searchIcon() {
 
-    let input = document
-        .getElementById("search")
-        .value
-        .toLowerCase();
+    let searchBox = document.getElementById("search");
 
-    if (input.trim() === "") {
-
-    const searchBox = document.getElementById("search");
-
-    searchBox.placeholder = "Please enter an icon name to search";
-    searchBox.focus();
-
-    return;
-
-}
-
+    let input = searchBox.value.trim().toLowerCase();
 
     let result = document.getElementById("result");
 
     result.innerHTML = "";
 
+    // Empty search
+    if (input === "") {
 
-    icons.forEach(icon => {
+        searchBox.value = "";
+        searchBox.placeholder = "Please enter an icon name to search";
+        searchBox.focus();
 
-    if(
-        icon.name.toLowerCase().includes(input) ||
-        icon.keyword.toLowerCase().includes(input) ||
-        icon.category.toLowerCase().includes(input)
-    ){
-
-        result.innerHTML += `
-
-<div class="card">
-
-<img src="${icon.image}"
-onclick="openImage('${icon.image}','${icon.name}')">
-
-<h3>${icon.name}</h3>
-
-<div class="button-row">
-
-<button class="download-btn"
-onclick="downloadIcon('${icon.image}','${icon.name}')">
-Download PNG
-</button>
-
-<span class="heart-btn"
-onclick="addFavorite('${icon.name}','${icon.image}','icons.html')">
-❤️
-</span>
-
-</div>
-
-</div>
-
-        `;
+        return;
 
     }
 
-});
+    // Restore placeholder
+    searchBox.placeholder = "Search scientific icons...";
 
-// ADD THIS PART
-if (result.innerHTML === "") {
+    icons.forEach(icon => {
 
-    result.innerHTML = "<h3>No icons found.</h3>";
+        if (
+            icon.name.toLowerCase().includes(input) ||
+            icon.keyword.toLowerCase().includes(input) ||
+            icon.category.toLowerCase().includes(input)
+        ) {
+
+            result.innerHTML += `
+
+<div class="card">
+
+    <img src="${icon.image}"
+    onclick="openImage('${icon.image}','${icon.name}')">
+
+    <h3>${icon.name}</h3>
+
+    <div class="button-row">
+
+        <button class="download-btn"
+        onclick="downloadIcon('${icon.image}','${icon.name}')">
+            Download PNG
+        </button>
+
+        <span class="heart-btn"
+        onclick="addFavorite('${icon.name}','${icon.image}','icons.html')">
+            ❤️
+        </span>
+
+    </div>
+
+</div>
+
+            `;
+
+        }
+
+    });
+
+    // No matching icons
+    if (result.innerHTML === "") {
+
+        result.innerHTML = "<h3>No icons found.</h3>";
+
+    }
 
 }
 
