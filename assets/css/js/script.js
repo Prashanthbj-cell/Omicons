@@ -44,29 +44,27 @@ function searchIcon(){
 
     icons.forEach(icon => {
 
+    if(
+        icon.name.toLowerCase().includes(input) ||
+        icon.keyword.toLowerCase().includes(input) ||
+        icon.category.toLowerCase().includes(input)
+    ){
 
-        if(
-icon.name.toLowerCase().includes(input) ||
-icon.keyword.toLowerCase().includes(input) ||
-icon.category.toLowerCase().includes(input)
-){
-
-
-          result.innerHTML += `
+        result.innerHTML += `
 
 <div class="card">
 
-<img src="${icon.image}" 
+<img src="${icon.image}"
 onclick="openImage('${icon.image}','${icon.name}')">
 
 <h3>${icon.name}</h3>
 
 <div class="button-row">
 
-<button class="download-btn" onclick="downloadIcon('${icon.image}','${icon.name}')">
+<button class="download-btn"
+onclick="downloadIcon('${icon.image}','${icon.name}')">
 Download PNG
 </button>
-
 
 <span class="heart-btn"
 onclick="addFavorite('${icon.name}','${icon.image}','icons.html')">
@@ -77,13 +75,16 @@ onclick="addFavorite('${icon.name}','${icon.image}','icons.html')">
 
 </div>
 
-            `;
+        `;
 
-        }
+    }
 
+});
 
-    });
+// ADD THIS PART
+if (result.innerHTML === "") {
 
+    result.innerHTML = "<h3>No icons found.</h3>";
 
 }
 
