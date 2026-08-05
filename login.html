@@ -14,17 +14,17 @@
     <h1>OMICONS</h1>
     <h2>Login</h2>
 
- <input
+<input
     type="email"
     id="email"
     placeholder="Email"
-    onkeydown="if(event.key==='Enter'){login();}">
+    onkeydown="if(event.key==='Enter'){event.preventDefault(); document.getElementById('password').focus();}">
 
 <input
     type="password"
     id="password"
     placeholder="Password"
-    onkeydown="if(event.key==='Enter'){login();}">
+    onkeydown="if(event.key==='Enter'){event.preventDefault(); login();}">
 
 <button onclick="login()">Login</button>
 
