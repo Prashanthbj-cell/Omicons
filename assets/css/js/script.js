@@ -107,16 +107,19 @@ function downloadIcon(image, name) {
 
         // ===== WATERMARK =====
         ctx.save();
-        ctx.translate(canvas.width / 2, canvas.height / 2);
-        ctx.rotate(-Math.PI / 4);
+ctx.rotate(-Math.PI / 4);
 
-        ctx.font = "100px Arial";
-        ctx.fillStyle = "rgba(0, 0, 0, 0.3)";
-        ctx.textAlign = "center";
+ctx.font = "60px Arial";
+ctx.fillStyle = "rgba(0, 0, 0, 0.15)";
+ctx.textAlign = "center";
 
-        ctx.fillText("WWW.OMICONS.IN", 0, 0);
+for (let x = -canvas.width; x < canvas.width * 2; x += 180) {
+    for (let y = -canvas.height; y < canvas.height * 2; y += 120) {
+        ctx.fillText("OMICONS", x, y);
+    }
+}
 
-        ctx.restore();
+ctx.restore();
         // =====================
 
         let pngFile = canvas.toDataURL("image/png");
