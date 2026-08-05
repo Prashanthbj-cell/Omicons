@@ -29,12 +29,14 @@ function searchIcon(){
 
     if (input.trim() === "") {
 
-        document.getElementById("result").innerHTML =
-            "<h3>Please enter an icon name to search.</h3>";
+    const searchBox = document.getElementById("search");
 
-        return;
+    searchBox.placeholder = "Please enter an icon name to search";
+    searchBox.focus();
 
-    }
+    return;
+
+}
 
 
     let result = document.getElementById("result");
