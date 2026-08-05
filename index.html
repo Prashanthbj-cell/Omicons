@@ -137,13 +137,19 @@ Logout
 
     <div class="search-container">
 
-        <input
-    type="text"
-    id="search"
-    placeholder="Search scientific icons..."
-    onkeydown="if(event.key==='Enter'){event.preventDefault(); searchIcon();}">
+<div class="search-container">
 
-    </div>
+    <input
+        type="text"
+        id="search"
+        placeholder="Search scientific icons..."
+        onkeydown="if(event.key === 'Enter'){ searchIcon(); }">
+
+    <button onclick="searchIcon()">
+        Search
+    </button>
+
+</div>
 
     <div id="result"></div>
 
@@ -195,11 +201,6 @@ Logout
         </div>
 
 
-
-    <script src="assets/css/js/script.js"></script>
-
-
-
    <section id="pricing" class="pricing">
 
     <h2>Pricing</h2>
@@ -214,7 +215,7 @@ Logout
 </section>
 
 
-   <<section id="about" class="about">
+   <section id="about" class="about">
 
     <h2>About OMICONS</h2>
 
@@ -338,16 +339,9 @@ support the research and scientific community.
 
 </div>
 
+         <script src="assets/css/js/script.js"></script>
+
     </body>
 
     </html>
 
-<div id="imageModal" class="modal">
-
-    <span class="close" onclick="closeImage()">&times;</span>
-
-    <img id="modalImage">
-
-    <h2 id="modalTitle"></h2>
-
-</div>
