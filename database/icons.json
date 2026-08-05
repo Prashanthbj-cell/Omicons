@@ -640,8 +640,54 @@
         "keyword": "Funnel",
         "category": "Laboratory",
         "image": "assets/icons/Laboratory/Funnel2.svg"
+    },
+    {
+        "name": "Conical Flask1",
+        "keyword": "Conical Flask",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Conical Flask1.svg"
+    },
+{
+        "name": "Conical Flask1",
+        "keyword": "Conical Flask",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Conical Flask1.svg"
+    },
+{
+        "name": "Conical Flask2",
+        "keyword": "Conical Flask",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Conical Flask2.svg"
+    },
+{
+        "name": "Conical Flask3",
+        "keyword": "Conical Flask",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Conical Flask3.svg"
+    },
+{
+        "name": "Conical Flask4",
+        "keyword": "Conical Flask",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Conical Flask4.svg"
+    },
+{
+        "name": "Conical Flask5",
+        "keyword": "Conical Flask",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Conical Flask5.svg"
+    },
+{
+        "name": "Conical Flask6",
+        "keyword": "Conical Flask",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Conical Flask6.svg"
+    },
+{
+        "name": "Conical Flask7",
+        "keyword": "Conical Flask",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Conical Flask7.svg"
     }
-
-
 ]
 
