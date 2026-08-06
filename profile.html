@@ -1,27 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Profile</title>
-
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<script type="module" src="assets/js/profile.js"></script>
 <body>
 
 <nav>
-
-<div class="logo">
-    <a href="index.html">OMICONS</a>
-</div>
-
-<div class="nav-actions">
-    <button onclick="logout()">Logout</button>
-</div>
-
+...
 </nav>
+
 
 <div class="profile-container">
 
@@ -38,34 +26,47 @@
 <button class="profile-btn" onclick="uploadImage()">
 Upload Profile Image
 </button>
-     
+
 
 <h2 id="userName">Loading...</h2>
 
 <p id="userEmail"></p>
 
-<p>
-    <strong>Member Since:</strong>
-    <span id="memberSince">Loading...</span>
-</p>
 
 <p>
-    <strong>User ID:</strong>
-    <span id="userUID"></span>
+<strong>Member Since:</strong>
+<span id="memberSince">Loading...</span>
 </p>
+
+
+<p>
+<strong>User ID:</strong>
+<span id="userUID"></span>
+</p>
+
 
 <hr>
 
+
 <button class="profile-btn"
 onclick="window.location.href='edit-profile.html'">
-    Edit Profile
+Edit Profile
 </button>
+
 
 <button class="profile-btn"
 onclick="logout()">
 Logout
 </button>
 
+
+</div>
+</div>
+
+
+<script type="module" src="assets/js/profile.js"></script>
+
+</body>
 </div>
 
 </div>
