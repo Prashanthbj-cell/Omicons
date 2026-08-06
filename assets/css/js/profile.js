@@ -61,13 +61,22 @@ return;
 }
 
 
-
 document.getElementById("userName").innerText =
 user.displayName || "OMICONS User";
 
 
 document.getElementById("userEmail").innerText =
 user.email;
+
+
+document.getElementById("userUID").innerText =
+user.uid;
+
+
+const joined = new Date(user.metadata.creationTime);
+
+document.getElementById("memberSince").innerText =
+joined.toDateString();
 
 
 
