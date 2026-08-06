@@ -97,6 +97,7 @@ window.location.href="login.html";
 
 window.uploadImage = async function(){
 
+try{
 
 const file =
 document.getElementById("imageUpload").files[0];
@@ -111,8 +112,16 @@ return;
 }
 
 
-
 const user = auth.currentUser;
+
+
+if(!user){
+
+alert("User not logged in");
+
+return;
+
+}
 
 
 
@@ -131,19 +140,25 @@ await getDownloadURL(imageRef);
 
 
 await updateProfile(user,{
-
 photoURL:imageURL
-
 });
 
 
 
-document.getElementById("profileImage").src =
-imageURL;
+document.getElementById("profileImage").src=imageURL;
 
 
+alert("Profile image updated successfully");
 
-alert("Profile image updated");
 
+}
+
+catch(error){
+
+console.log(error);
+
+alert(error.message);
+
+}
 
 }
