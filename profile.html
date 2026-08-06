@@ -1,72 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
 <nav>
-...
+    <!-- Your navigation bar goes here -->
 </nav>
-
 
 <div class="profile-container">
 
-<h1>My Profile</h1>
+    <h1>My Profile</h1>
 
-<div class="profile-card">
+    <div class="profile-card">
 
-<img src="assets/images/avatar.png" id="profileImage">
+        <img
+            src="assets/images/avatar.PNG"
+            id="profileImage"
+            width="120">
 
+        <input
+            type="file"
+            id="imageUpload"
+            accept="image/*">
 
-<input type="file" id="imageUpload" accept="image/*">
+        <button
+            class="profile-btn"
+            onclick="uploadImage()">
+            Upload Profile Image
+        </button>
 
+        <h2 id="userName">Loading...</h2>
 
-<button class="profile-btn" onclick="uploadImage()">
-Upload Profile Image
-</button>
+        <p id="userEmail"></p>
 
+        <p>
+            <strong>Member Since:</strong>
+            <span id="memberSince">Loading...</span>
+        </p>
 
-<h2 id="userName">Loading...</h2>
+        <p>
+            <strong>User ID:</strong>
+            <span id="userUID"></span>
+        </p>
 
-<p id="userEmail"></p>
+        <hr>
 
+        <button
+            class="profile-btn"
+            onclick="window.location.href='edit-profile.html'">
+            Edit Profile
+        </button>
 
-<p>
-<strong>Member Since:</strong>
-<span id="memberSince">Loading...</span>
-</p>
+        <button
+            class="profile-btn"
+            onclick="logout()">
+            Logout
+        </button>
 
-
-<p>
-<strong>User ID:</strong>
-<span id="userUID"></span>
-</p>
-
-
-<hr>
-
-
-<button class="profile-btn"
-onclick="window.location.href='edit-profile.html'">
-Edit Profile
-</button>
-
-
-<button class="profile-btn"
-onclick="logout()">
-Logout
-</button>
-
+    </div>
 
 </div>
-</div>
-
 
 <script type="module" src="assets/js/profile.js"></script>
 
 </body>
-</div>
 
-</div>
+</html>
