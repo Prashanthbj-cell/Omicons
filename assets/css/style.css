@@ -85,6 +85,24 @@ h1{
     color:#1E293B;
 }
 
+.intro{
+
+max-width:900px;
+
+margin:20px auto;
+
+text-align:center;
+
+font-size:18px;
+
+line-height:1.7;
+
+color:#555;
+
+padding:0 20px;
+
+}
+
     /* Hero */
 
     .hero{
