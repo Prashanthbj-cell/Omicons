@@ -54,8 +54,11 @@ function searchIcon() {
 
 <div class="card">
 
-    <img src="${icon.image}"
-         onclick="openImage('${icon.image}','${icon.name}')">
+    <img
+src="${icon.image}"
+alt="${icon.name} scientific PNG icon"
+title="${icon.name}"
+onclick="openImage('${icon.image}','${icon.name}')">
 
     <h3>${icon.name}</h3>
 
