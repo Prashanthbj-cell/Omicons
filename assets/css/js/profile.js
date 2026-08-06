@@ -1,24 +1,12 @@
 import { initializeApp } 
 from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
 
-
-import { 
-getAuth,
-onAuthStateChanged,
-signOut,
-updateProfile
-} 
-from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
-
-
 import {
-getStorage,
-ref,
-uploadBytes,
-getDownloadURL
-}
-from "https://www.gstatic.com/firebasejs/12.1.0/firebase-storage.js";
-
+    getAuth,
+    onAuthStateChanged,
+    signOut,
+    updateProfile
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
 
 
 const firebaseConfig = {
@@ -44,7 +32,6 @@ const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app);
 
-const storage = getStorage(app);
 
 
 
@@ -104,70 +91,66 @@ window.location.href="login.html";
 
 
 
-window.uploadImage = async function(){
+window.uploadImage = async function () {
 
-try{
+    try {
 
-const file =
-document.getElementById("imageUpload").files[0];
+        const file = document.getElementById("imageUpload").files[0];
 
+        if (!file) {
+            alert("Please select an image");
+            return;
+        }
 
-if(!file){
+        const user = auth.currentUser;
 
-alert("Please select an image");
+        if (!user) {
+            alert("User not logged in");
+            return;
+        }
 
-return;
+        const formData = new FormData();
 
-}
+        formData.append("file", file);
 
+        formData.append(
+            "upload_preset",
+            "omicons_profile"
+        );
 
-const user = auth.currentUser;
+        const response = await fetch(
+            "https://api.cloudinary.com/v1_1/agkstsa9/image/upload",
+            {
+                method: "POST",
+                body: formData
+            }
+        );
 
+        const data = await response.json();
 
-if(!user){
+        if (!data.secure_url) {
+            console.log(data);
 
-alert("User not logged in");
+throw new Error(data.error?.message || "Image upload failed");
+        }
 
-return;
+        const imageURL = data.secure_url;
 
-}
+        await updateProfile(user, {
+            photoURL: imageURL
+        });
 
+        document.getElementById("profileImage").src = imageURL;
 
+        alert("Profile image updated successfully");
 
-const imageRef =
-ref(storage,"profileImages/"+user.uid);
+    }
+    catch (error) {
 
+        console.error(error);
 
+        alert(error.message);
 
-await uploadBytes(imageRef,file);
-
-
-
-const imageURL =
-await getDownloadURL(imageRef);
-
-
-
-await updateProfile(user,{
-photoURL:imageURL
-});
-
-
-
-document.getElementById("profileImage").src=imageURL;
-
-
-alert("Profile image updated successfully");
-
-
-}
-
-catch(error){
-
-console.log(error);
-
-alert(error.message);
-
-}
+    }
 
 }
