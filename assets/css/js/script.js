@@ -54,11 +54,8 @@ function searchIcon() {
 
 <div class="card">
 
-    <img
-src="${icon.image}"
-alt="${icon.name} scientific PNG icon"
-title="${icon.name}"
-onclick="openImage('${icon.image}','${icon.name}')">
+    <img src="${icon.image}"
+         onclick="openImage('${icon.image}','${icon.name}')">
 
     <h3>${icon.name}</h3>
 
@@ -105,35 +102,21 @@ function downloadIcon(image, name) {
 
         let ctx = canvas.getContext("2d");
 
-        // Draw the icon
         ctx.drawImage(img, 0, 0);
 
-        // ===== WATERMARK =====
-        ctx.save();
-ctx.rotate(-Math.PI / 4);
-
-ctx.font = "60px Arial";
-ctx.fillStyle = "rgba(0, 0, 0, 0.15)";
-ctx.textAlign = "center";
-
-for (let x = -canvas.width; x < canvas.width * 2; x += 350) {
-    for (let y = -canvas.height; y < canvas.height * 2; y += 150) {
-        ctx.fillText("OMICONS", x, y);
-    }
-}
-
-ctx.restore();
-        // =====================
-
         let pngFile = canvas.toDataURL("image/png");
+
 
         let link = document.createElement("a");
 
         link.href = pngFile;
+
         link.download = name + ".png";
 
         document.body.appendChild(link);
+
         link.click();
+
         document.body.removeChild(link);
 
     };
