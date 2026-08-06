@@ -260,3 +260,42 @@ alert("Already in Favorites");
 
 
 }
+
+window.uploadImage = async function(){
+
+const file = document.getElementById("imageUpload").files[0];
+
+if(!file){
+    alert("Please select an image");
+    return;
+}
+
+
+const user = auth.currentUser;
+
+
+const storageRef = ref(
+    storage,
+    "profileImages/" + user.uid
+);
+
+
+await uploadBytes(storageRef,file);
+
+
+const imageURL = await getDownloadURL(storageRef);
+
+
+// save image to Firebase user profile
+
+await updateProfile(user,{
+    photoURL:imageURL
+});
+
+
+document.getElementById("profileImage").src = imageURL;
+
+
+alert("Profile image updated");
+
+}
