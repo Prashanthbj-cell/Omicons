@@ -1,4 +1,5 @@
 User-agent: *
+
 Allow: /
 
-Sitemap: https://prashanthbj-cell.github.io/Omicons/sitemap.xml
+Sitemap: https://your-domain.com/sitemap.xml
