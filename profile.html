@@ -28,6 +28,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+    const storage = getStorage(app);
 
 onAuthStateChanged(auth, (user) => {
 
@@ -80,7 +81,17 @@ window.logout = async function () {
 
 <div class="profile-card">
 
-<img src="assets/images/avatar.png" id="profileImage">
+<img src="assets/images/avatar.png" 
+id="profileImage"
+class="profile-img">
+
+
+<input type="file" id="imageUpload" accept="image/*">
+
+
+<button class="profile-btn" onclick="uploadImage()">
+Upload Profile Image
+</button>
      
 
 <h2 id="userName">Loading...</h2>
