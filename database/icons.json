@@ -748,43 +748,43 @@
         "name": "Cell5",
         "keyword": "Cell",
         "category": "Cells",
-        "image": "assets/icons/Laboratory/Cell5.svg"
+        "image": "assets/icons/Cells/Cell5.svg"
     },
 {
         "name": "Cell6",
         "keyword": "Cell",
         "category": "Cells",
-        "image": "assets/icons/Laboratory/Cell6.svg"
+        "image": "assets/icons/Cells/Cell6.svg"
     },
 {
         "name": "Cell7",
         "keyword": "Cell",
         "category": "Cells",
-        "image": "assets/icons/Laboratory/Cell7.svg"
+        "image": "assets/icons/Cells/Cell7.svg"
     },
 {
         "name": "Cell8",
         "keyword": "Cell",
         "category": "Cells",
-        "image": "assets/icons/Laboratory/Cell8.svg"
+        "image": "assets/icons/Cells/Cell8.svg"
     },
 {
         "name": "Cell9",
         "keyword": "Cell",
         "category": "Cells",
-        "image": "assets/icons/Laboratory/Cell9.svg"
+        "image": "assets/icons/Cells/Cell9.svg"
     },
 {
         "name": "Cell10",
         "keyword": "Cell",
         "category": "Cells",
-        "image": "assets/icons/Laboratory/Cell10.svg"
+        "image": "assets/icons/Cells/Cell10.svg"
     },
 {
         "name": "RBC1",
         "keyword": "RBC",
         "category": "Cells",
-        "image": "assets/icons/Laboratory/RBC1.svg"
+        "image": "assets/icons/Cells/RBC1.svg"
     }
 ]
 
