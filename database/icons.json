@@ -688,6 +688,61 @@
         "keyword": "Conical Flask",
         "category": "Laboratory",
         "image": "assets/icons/Laboratory/Conical Flask7.svg"
+    },
+    {
+        "name": "Drop1",
+        "keyword": "Drop",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Drop1.svg"
+    },
+{
+        "name": "Drop2",
+        "keyword": "Drop",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Drop2.svg"
+    },
+{
+        "name": "Drop3",
+        "keyword": "Drop",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Drop3.svg"
+    },
+{
+        "name": "Drop4",
+        "keyword": "Drop",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Drop4.svg"
+    },
+{
+        "name": "Drop5",
+        "keyword": "Drop",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Drop5.svg"
+    },
+{
+        "name": "Dropper1",
+        "keyword": "Dropper",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Dropper1.svg"
+    },
+
+{
+        "name": "Dropper2",
+        "keyword": "Dropper",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Dropper2.svg"
+    },
+{
+        "name": "Dropper3",
+        "keyword": "Dropper",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Dropper3.svg"
+    },
+{
+        "name": "Dropper4",
+        "keyword": "Dropper",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Dropper4.svg"
     }
 ]
 
