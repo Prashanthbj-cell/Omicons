@@ -893,6 +893,66 @@
         "keyword": "Tune Music Note",
         "category": "General",
         "image": "assets/icons/General/Tune2.svg"
+    },
+    {
+        "name": "Icon1",
+        "keyword": "Icons",
+        "category": "General",
+        "image": "assets/icons/General/Icon1.svg"
+    },
+     {
+        "name": "Icon2",
+        "keyword": "Icons",
+        "category": "General",
+        "image": "assets/icons/General/Icon2.svg"
+    },
+     {
+        "name": "Icon3",
+        "keyword": "Icons",
+        "category": "General",
+        "image": "assets/icons/General/Icon3.svg"
+    },
+     {
+        "name": "Icon4",
+        "keyword": "Icons",
+        "category": "General",
+        "image": "assets/icons/General/Icon4.svg"
+    },
+     {
+        "name": "Icon5",
+        "keyword": "Icons",
+        "category": "General",
+        "image": "assets/icons/General/Icon5.svg"
+    },
+     {
+        "name": "Icon6",
+        "keyword": "Icons",
+        "category": "General",
+        "image": "assets/icons/General/Icon6.svg"
+    },
+     {
+        "name": "Icon7",
+        "keyword": "Icons",
+        "category": "General",
+        "image": "assets/icons/General/Icon7.svg"
+    },
+     {
+        "name": "Icon8",
+        "keyword": "Icons",
+        "category": "General",
+        "image": "assets/icons/General/Icon8.svg"
+    },
+     {
+        "name": "Icon9",
+        "keyword": "Icons",
+        "category": "General",
+        "image": "assets/icons/General/Icon9.svg"
+    },
+     {
+        "name": "Icon10",
+        "keyword": "Icons",
+        "category": "General",
+        "image": "assets/icons/General/Icon10.svg"
     }
 ]
 
