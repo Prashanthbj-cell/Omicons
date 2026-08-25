@@ -438,6 +438,12 @@
         "image": "assets/icons/Laboratory/Reagent bottle8.svg"
     },
     {
+        "name": "Reagent bottle9",
+        "keyword": "Brown reagent bottle",
+        "category": "Laboratory",
+        "image": "assets/icons/Laboratory/Reagent bottle9.svg"
+    },
+    {
         "name": "Round bottom flask1",
         "keyword": "Round bottom flask",
         "category": "Laboratory",
