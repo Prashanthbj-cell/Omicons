@@ -105,23 +105,7 @@ function downloadIcon(image, name) {
         // Draw the icon
         ctx.drawImage(img, 0, 0);
 
-        // ===== WATERMARK =====
-       ctx.save();
-ctx.rotate(-Math.PI / 4);
-
-ctx.font = "80px Arial";
-ctx.fillStyle = "rgba(0, 0, 0, 0.3)";
-ctx.textAlign = "center";
-
-for (let x = -canvas.width; x < canvas.width * 2; x += 450) {
-    for (let y = -canvas.height; y < canvas.height * 2; y += 120) {
-        ctx.fillText("OMICONS", x, y);
-    }
-}
-
-ctx.restore();
-        // =====================
-
+        // Convert canvas to PNG
         let pngFile = canvas.toDataURL("image/png");
 
         let link = document.createElement("a");
@@ -136,7 +120,6 @@ ctx.restore();
     };
 
     img.src = image;
-
 }
 
 function openImage(image, name){
