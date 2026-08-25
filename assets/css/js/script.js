@@ -102,24 +102,27 @@ function downloadIcon(image, name) {
 
         let ctx = canvas.getContext("2d");
 
-        // Draw the icon
         ctx.drawImage(img, 0, 0);
 
-        // Convert canvas to PNG
         let pngFile = canvas.toDataURL("image/png");
+
 
         let link = document.createElement("a");
 
         link.href = pngFile;
+
         link.download = name + ".png";
 
         document.body.appendChild(link);
+
         link.click();
+
         document.body.removeChild(link);
 
     };
 
     img.src = image;
+
 }
 
 function openImage(image, name){
