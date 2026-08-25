@@ -743,6 +743,48 @@
         "keyword": "Dropper",
         "category": "Laboratory",
         "image": "assets/icons/Laboratory/Dropper4.svg"
+    },
+    {
+        "name": "Cell5",
+        "keyword": "Cell",
+        "category": "Cells",
+        "image": "assets/icons/Laboratory/Cell5.svg"
+    },
+{
+        "name": "Cell6",
+        "keyword": "Cell",
+        "category": "Cells",
+        "image": "assets/icons/Laboratory/Cell6.svg"
+    },
+{
+        "name": "Cell7",
+        "keyword": "Cell",
+        "category": "Cells",
+        "image": "assets/icons/Laboratory/Cell7.svg"
+    },
+{
+        "name": "Cell8",
+        "keyword": "Cell",
+        "category": "Cells",
+        "image": "assets/icons/Laboratory/Cell8.svg"
+    },
+{
+        "name": "Cell9",
+        "keyword": "Cell",
+        "category": "Cells",
+        "image": "assets/icons/Laboratory/Cell9.svg"
+    },
+{
+        "name": "Cell10",
+        "keyword": "Cell",
+        "category": "Cells",
+        "image": "assets/icons/Laboratory/Cell10.svg"
+    },
+{
+        "name": "RBC1",
+        "keyword": "RBC",
+        "category": "Cells",
+        "image": "assets/icons/Laboratory/RBC1.svg"
     }
 ]
 
