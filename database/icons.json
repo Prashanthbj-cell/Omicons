@@ -809,6 +809,90 @@
         "keyword": "Bunsen burner fire lamp",
         "category": "Chemistry",
         "image": "assets/icons/Chemistry/Bunsen burner 4.svg"
+    },
+    {
+        "name": "Coffee1",
+        "keyword": "Coffee mug",
+        "category": "General",
+        "image": "assets/icons/General/Coffee1.svg"
+    },
+{
+        "name": "Coffee2",
+        "keyword": "Coffee mug",
+        "category": "General",
+        "image": "assets/icons/General/Coffee2.svg"
+    },
+{
+        "name": "File1",
+        "keyword": "File Folder",
+        "category": "General",
+        "image": "assets/icons/General/File1.svg"
+    },
+{
+        "name": "Lock1",
+        "keyword": "Lock privacy",
+        "category": "General",
+        "image": "assets/icons/General/Lock1.svg"
+    },
+{
+        "name": "Lock2",
+        "keyword": "Lock privacy",
+        "category": "General",
+        "image": "assets/icons/General/Lock2.svg"
+    },
+{
+        "name": "Lock3",
+        "keyword": "Lock privacy",
+        "category": "General",
+        "image": "assets/icons/General/Lock3.svg"
+    },
+{
+        "name": "Mouse1",
+        "keyword": "Mouse",
+        "category": "General",
+        "image": "assets/icons/General/Mouse1.svg"
+    },
+{
+        "name": "Mouse2",
+        "keyword": "Coffee mug",
+        "category": "General",
+        "image": "assets/icons/General/Mouse2.svg"
+    },
+{
+        "name": "Phone1",
+        "keyword": "Phone Call",
+        "category": "General",
+        "image": "assets/icons/General/Phone1.svg"
+    },
+{
+        "name": "Suitcase1",
+        "keyword": "Suitcase file folder",
+        "category": "General",
+        "image": "assets/icons/General/Suitcase1.svg"
+    },
+{
+        "name": "Suitcase2",
+        "keyword": "Suitcase file folder",
+        "category": "General",
+        "image": "assets/icons/General/Suitcase2.svg"
+    },
+{
+        "name": "Suitcase1",
+        "keyword": "Suitcase file folder",
+        "category": "General",
+        "image": "assets/icons/General/Suitcase2.svg"
+    },
+{
+        "name": "Tune1",
+        "keyword": "Tune Music Note",
+        "category": "General",
+        "image": "assets/icons/General/Tune1.svg"
+    },
+{
+        "name": "Tune2",
+        "keyword": "Tune Music Note",
+        "category": "General",
+        "image": "assets/icons/General/Tune2.svg"
     }
 ]
 
