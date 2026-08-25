@@ -268,7 +268,7 @@
         "image": "assets/icons/Proteomics/Graph2.svg"
     },
      {
-        "name": "Report34",
+        "name": "Report4",
         "keyword": "report",
         "category": "Laboratory",
         "image": "assets/icons/Laboratory/Report4.svg"
@@ -654,12 +654,6 @@
         "image": "assets/icons/Laboratory/Conical Flask1.svg"
     },
 {
-        "name": "Conical Flask1",
-        "keyword": "Conical Flask",
-        "category": "Laboratory",
-        "image": "assets/icons/Laboratory/Conical Flask1.svg"
-    },
-{
         "name": "Conical Flask2",
         "keyword": "Conical Flask",
         "category": "Laboratory",
@@ -791,6 +785,36 @@
         "keyword": "RBC",
         "category": "Cells",
         "image": "assets/icons/Cells/RBC1.svg"
+    },
+ {
+        "name": "Bunsen burner 1",
+        "keyword": "RBC",
+        "category": "Chemistry",
+        "image": "assets/icons/Chemistry/Bunsen burner 1.svg"
+    },
+     {
+        "name": "Bunsen burner 2",
+        "keyword": "RBC",
+        "category": "Chemistry",
+        "image": "assets/icons/Chemistry/Bunsen burner 2.svg"
+    },
+     {
+        "name": "Bunsen burner 3",
+        "keyword": "RBC",
+        "category": "Chemistry",
+        "image": "assets/icons/Chemistry/Bunsen burner 3.svg"
+    },
+     {
+        "name": "Bunsen burner 4",
+        "keyword": "RBC",
+        "category": "Chemistry",
+        "image": "assets/icons/Chemistry/Bunsen burner 4    .svg"
+    },
+     {
+        "name": "Bunsen burner 5",
+        "keyword": "RBC",
+        "category": "Chemistry",
+        "image": "assets/icons/Chemistry/Bunsen burner 5.svg"
     }
 ]
 
